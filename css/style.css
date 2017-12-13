@@ -1,0 +1,142 @@
+html{
+  font-size:16px;
+  font-family:"Helvetica"
+}
+
+
+
+
+button,
+button:active,
+button:focus,
+button:hover,
+.btn,
+.btn:active,
+.btn:focus,
+.btn:hover{
+   border:none !important;
+    outline:none !important;
+}
+nav {
+  background-color:rgba(93, 114, 122,.5);
+  height:70px;
+}
+
+
+#name {
+  letter-spacing:.2rem;
+  font-weight:bold;
+  color:white;
+  padding-left:.5rem;
+}
+
+.nav-link {
+  color:white;
+  letter-spacing:.1rem;
+  font-size:14px;
+}
+
+#blog{
+  color:rgb(66, 146, 244);
+}
+
+.navbar-toggler-icon{
+  color:white;
+}
+
+
+
+@media only screen and (max-width: 768px){
+
+.navbar-nav li {
+  background-color:rgba(93, 114, 122,.9);
+  padding-right:10px ;
+  padding-left:10px ;
+}
+
+.navbar-nav {
+  margin-top:20px;
+}
+
+#blog{
+  color:skyblue;
+}
+}
+
+/* _____________________________JUMBOTRON_____________________________________ */
+
+.jumbotron{
+  height:100vh;
+  text-align:center;
+  background-image:url("../images/desk-1.jpg");
+  background-size:cover;
+}
+
+
+@media only screen and (max-width: 768px){
+  .jumbotron .jumbotron-name{
+    align-items:center;
+    align-content:center;
+    justify-content:center;
+  }
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center;
+}
+
+
+.jumbotron-name{
+  /*margin-top:20%;*/
+  padding:0;
+  /*border:1px red solid;*/
+ padding-bottom:20px;
+ color:white;
+  background-color:rgba(93, 114, 122, .2);
+}
+
+#description{
+  letter-spacing:.3rem;
+  font-size:12px;
+}
+
+.about {
+transform: rotate(-90deg);
+-webkit-transform: rotate(-90deg);
+float:left;
+color:white;
+border:none;
+margin-top:3.7rem;
+font-size:18px;
+letter-spacing:.3rem;
+border-bottom:1px solid darkgray;
+background-color:rgba(1,1,1,0);
+opacity:.6;
+flex-direction:column;
+display:flex;
+align-items: center;
+align-content: center;
+}
+
+.about:hover{
+  font-weight: 300;
+  opacity:1;
+}
+
+.modal{
+  height:100vh;
+  width:100%;
+  background-color: white;
+}
+
+.arrow-right {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
